@@ -14,14 +14,6 @@ consign()
 app.db = db
 app.parseapi = parseapi
 
-
-/* Para homologação */
-/* app.listen(3000, () => {
-    console.log('Backend executando...')
-}) */
-
-/* Para produção */
-
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Backend executando na porta ${PORT}...`);
